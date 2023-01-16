@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law Enforcement Animals || ASPCA</title>
+    <style>
+      html {
+  scroll-behavior: smooth;
+}
+.container {
+  display: grid;
+  position: relative;
+  margin: auto;
+  grid-gap: 10px;
+  grid-template-areas: "nav nav"
+"header header"
+"left		right"
+"about-us about-us"
+"footer	footer";
+  grid-template-columns: 50% 50%;
+}
+  
+  header {
+    background-color: #FFFFFF;
+    grid-area: header;
+    background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/996/original/ea2_eoy_tax-break_20221228_homepage_desktop.png?1672585101");
+    height: 700px;
+  }
+  header .help {
+    color: #FFFFFF;
+    text-align: left;
+    font-family: "Museo Slab 900","Lucida Grande","Lucida Sans Unicode","Trebuchet MS",sans-serif;
+    font-size: 90px;
+    margin-right: 800px;
+    margin-top: 60px;
+    line-height: 1.4;
+  }
+  header .help:hover {
+   text-decoration: none;
+  }
+  button {
+    background-color:#FA7F49;
+    display: block;
+    float: left;
+    clear: both;
+    font-family: "Museo Slab 900","Lucida Grande","Lucida Sans Unicode","Trebuchet MS",sans-serif;
+    text-align: center;
+    font-size: 27px;
+    color:#FFFFFF;
+    width: 200px;
+    height: 100px;
+    border-radius: 4px;
+    margin-left: 170px;
+    margin-top: 40px;
+  }
+  button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  }
+  nav {
+    background-color:#FFFFFF;
+    grid-area: nav;
+    margin-left: 25px;
+    margin-top: 10px;
+    
+  }
+  .navigatior-bar {
+    display: flex;
+    font-size: 24px;
+    text-decoration: none;
+}
+p {
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  text-decoration: none;
+  flex-direction: row;
+  margin-top: 30px;
+}
+p:hover {
+  text-decoration: underline;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+  .left {
+    background-color: #FFFFFF;
+    grid-area: left;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-family: "Museo Slab 300","Lucida Grande","Lucida Sans Unicode","Trebuchet MS",sans-serif;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .right {
+    background-color: #FFFFFF;
+    grid-area: right;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-family: "Museo Slab 300","Lucida Grande","Lucida Sans Unicode","Trebuchet MS",sans-serif;
+    margin-top: 40px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .voice {
+    font-family: "Museo Slab 300","Lucida Grande","Lucida Sans Unicode","Trebuchet MS",sans-serif;
+    font-size: 55px;
+    margin-top: 70px;
+    text-align: center;
+  }
+  .about-us {
+    background-color: white;
+    grid-area: about-us;
+    font-family: "Museo Slab 300","Lucida Grande","Lucida Sans Unicode","Trebuchet MS",sans-serif;
+    font-size: 20px;
+    line-height: 1.5em;
+    margin-top: 45px;
+    margin-right: 45px;
+    margin-left: 45px;
+    text-align: justify;
+  }
+  
+  footer {
+    background-color: white;
+    grid-area: footer;
+    margin-top: 60px;
+    display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+  }
+  form {
+    margin-left: 500px;
+    height: 100px;
+  }
+#connect {
+  font-family: "Museo Slab 900","Lucida Grande","Lucida Sans Unicode","Trebuchet MS",sans-serif;
+  margin-top: 40px;
+  margin-left: 70px;
+  
+}
+a {
+  margin-left: 20px;
+  margin-top: 35px;
+}
+.flex-container {
+  display: inline-flex;
+  flex-direction: row;
+}
+.get-info {
+  display: flex;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: -20px;
+  height: 50px;
+  margin-top: 50px;
+}
+input[type=text] {
+  width: 100%;
+  padding: 14px 25px;
+  margin: 8px 4px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #FA7F49;;
+  color: white;
+  padding: 14px 25px;
+  margin-top: 50px;
+  margin-left: -500px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #FA7F49;
+}
+#search {
+  margin-right: -20px;
+  margin-top: 30px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+          <div class="navigatior-bar">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/001/original/ASPCA-logo.jpg?1672585145" width="150">
+              <a href="#about-us"><p>About us</p></a>
+              <a href="#help"><p>How you can help</p></a>
+              <a href="#work"><p>Our Work</p></a>
+              <a href="#connect"><p>Contact</p></a>
+              <form action="search.html" method="POST">
+                <label for="search"></label>
+                <br>
+                <input type="text" name="search" id="search" placeholder="search" style=height:25px>
+              </form>
+          </div>
+          </nav>
+          <header>
+            <p class="help" id="help">Help us <br>help them</p>
+            <button>Donate now</button>
+          </header>
+        <section class="left" id="work">
+          <span>
+            <em>December 30, 2022</em><br>
+            <br>
+            Animals in Need—and Meeting Needs—on the Front Lines of the War in Ukraine<br><br>
+            Find out how animals are a shining light during dark times in Ukraine.</span>
+            <form class="get-info">
+              <input type="text" name="firstname" placeholder="Name" size="15" maxlength="30" class="form-name"><br>
+              <input type="text" name="lastname"placeholder="Last Name" size="15" maxlength="30" class="form-last-name"><br>
+              <input type="text" name="email"placeholder="Email Adress" size="15" maxlength="30" class="email"><br>
+            </form>
+        </section>
+        <section class="right">
+          <span><em>December 30, 2022</em><br>
+            <br>
+            2022: A Year of Progress for Farm Animals!<br><br>
+            This past year has been full of exciting progress in the ASPCA’s work to protect farm animals, and YOU helped make it possible!</span>
+            <form class="sumbit-button">
+              <input type="submit" value="Subscribe">
+            </form>
+        </section>
+        <section class="about-us">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/003/original/mail-a-check.jpg?1672585171" height="670px">
+<h1 class="voice" id="about-us">We are their voice</h1>
+<span>The American Society for the Prevention of Cruelty to Animals® (ASPCA®) was the first humane society to be established in North America and is, today, one of the largest in the world.
+  <strong>Our organization was founded on the belief that animals are entitled to kind and respectful treatment at the hands of humans and must be protected under the law.</strong> Headquartered in New York City, the ASPCA maintains a strong local presence, and with programs that extend our anti-cruelty mission across the country, we are recognized as a national animal welfare organization. We are a privately funded 501(c)(3) not-for-profit corporation, and are proud to boast more than 2 million supporters across the country.
+  The ASPCA’s mission, as stated by founder Henry Bergh in 1866, is “to provide effective means for the prevention of cruelty to animals throughout the United States.”</span>
+        </section>
+        <footer>
+          <div class="flex-container">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/002/original/aspca-logo-a.jpg?1672585155" width="250">
+          <span id="connect">Connect with us</span>
+          <br>
+          <a href="https://www.facebook.com/aspca" target="_blank" title="facebook Profile"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/997/original/225129.png?1672585110" width="30" height="30"></a>
+            <a href="https://twitter.com/ASPCA" target="_blank" title="twitter Profile"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/998/original/673524.png?1672585122" width="30" height="30"></a>
+              <a href="https://www.youtube.com/user/aspca" target="_blank" title="youtube Profile"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/999/original/1384060.png?1672585129" width="30" height="30"></a>
+          <a href="https://www.instagram.com/ASPCA/" target="_blank" title="instragram Profile"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/004/original/insta.png?1672585178" width="30" height="30"></a>
+            <a href="https://www.tiktok.com/@aspca" target="_blank" title="tictock Profile"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/000/original/1946552.png?1672585136" width="30" height="30"></a>
+          </a>
+          </div>
+        </footer>
+      </div>
+</body>
+</html>
